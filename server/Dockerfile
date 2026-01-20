@@ -10,4 +10,4 @@ COPY . .
 ENV NODE_ENV=production
 EXPOSE 3000
 
-CMD ["node", "./bin/www"]
+CMD ["node", "--security-revert=CVE-2023-46809", "./bin/www"]
